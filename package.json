@@ -1,0 +1,24 @@
+{
+  "name": "slack-status-updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonasskottnielsen/slack-status-updater.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonasskottnielsen/slack-status-updater/issues"
+  },
+  "homepage": "https://github.com/jonasskottnielsen/slack-status-updater#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "node-cron": "^3.0.0"
+  }
+}
