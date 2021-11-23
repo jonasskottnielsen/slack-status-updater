@@ -13,31 +13,27 @@ cron.schedule('* 11 * * *', () => {
 		return Math.random() * (max - min) + min;
 	}
 
-	var data = JSON.stringify({
-		"profile": {
-			"status_text": dailyQuote,
-			"status_emoji": ":crystal_ball:"
-		}
-	});
-
-
-	var config = {
-		method: 'post',
-		url: 'https://slack.com/api/users.profile.set',
+	const url = 'https://slack.com/api/users.profile.set';
+	const header = {
 		headers: {
 			'Authorization': api_key,
 			'Content-Type': 'application/json'
-		},
-		data: data
-	};
+		}
+	}
+	let data = {
+		profile: {
+			status_text: dailyQuote,
+			status_emoji: ":crystal_ball:"
+		}
+	}
 
-	axios(config)
-		.then(function (response) {
-			console.log(JSON.stringify(response.data));
-		})
-		.catch(function (error) {
-			console.log(error);
-		});
+	let result;
+	try {
+		result = axios.post(url, data, header);
+	} catch (error) {
+		console.log(error)
+	}
+
 
 });
 const quotes = [
@@ -51,7 +47,6 @@ const quotes = [
 	"Opinions are like ass-holes, everybody has one",
 	"9 ud af 10 læger siger jeg er sindsyg, den sidste stak af",
 	"No man goes before his time—unless the boss leaves early.",
-	"If you think your boss is stupid, remember: you wouldn’t have a job if he was any smarter.",
 	"I have come here to chew bubblegum and kick ass... and I'm all out of bubblegum",
 	"What is this even?",
 	"Work, work, work",
