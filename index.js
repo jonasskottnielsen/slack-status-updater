@@ -5,7 +5,7 @@ require('dotenv').config();
 const api_key = `Bearer ${process.env.API_KEY}`;
 
 cron.schedule('10 * * * *', () => {
-	let dailyNumber = Math.round(getRandomArbitrary(0, quotes.length - 1))
+	let dailyNumber = Math.round(getRandomArbitrary(0, quotes.length - 1));
 
 	let dailyQuote = quotes[dailyNumber];
 
@@ -70,7 +70,8 @@ const quotes = [
 	"Walking on water and developing software from a specification are easy if both are frozen.",
 	"What’s the object-oriented way to get wealthy? Inheritance.",
 	"Why do Java programmers have to wear glasses? Because they don’t C#.",
-	"A SQL query goes into a bar, walks up to two tables, and asks, ‘Can I join you?"
+	"A SQL query goes into a bar, walks up to two tables, and asks, ‘Can I join you?",
+	"My mother always used to say: The older you get, the better you get, unless you’re a banana."
 ];
 
 
