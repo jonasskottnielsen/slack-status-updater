@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const api_key = `Bearer ${process.env.API_KEY}`;
 
-cron.schedule('* 11 * * *', () => {
+cron.schedule('10 * * * *', () => {
 	let dailyNumber = Math.round(getRandomArbitrary(0, quotes.length - 1))
 
 	let dailyQuote = quotes[dailyNumber];
@@ -61,7 +61,16 @@ const quotes = [
 	"It’s not a bug — it’s an undocumented feature.",
 	"The best thing about a boolean is even if you are wrong, you are only off by a bit.",
 	"One man’s crappy software is another man’s full-time job.",
-	"Software undergoes beta testing shortly before it’s released. Beta is Latin for “still doesn’t work."
+	"Software undergoes beta testing shortly before it’s released. Beta is Latin for “still doesn’t work.",
+	"Software and cathedrals are much the same — first we build them, then we pray.",
+	"A good programmer is someone who always looks both ways before crossing a one-way street.",
+	"Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.",
+	"It works on my machine.",
+	"It compiles; ship it.",
+	"Walking on water and developing software from a specification are easy if both are frozen.",
+	"What’s the object-oriented way to get wealthy? Inheritance.",
+	"Why do Java programmers have to wear glasses? Because they don’t C#.",
+	"A SQL query goes into a bar, walks up to two tables, and asks, ‘Can I join you?"
 ];
 
 
