@@ -402,13 +402,14 @@ const quotes = [
 	"Why do Java programmers have to wear glasses? Because they don’t C#.",
 	"A SQL query goes into a bar, walks up to two tables, and asks, ‘Can I join you?",
 	"My mother always used to say: The older you get, the better you get, unless you’re a banana.",
-	"If I’m not back in five minutes, just wait longer"
+	"If I’m not back in five minutes, just wait longer",
+	"Without requirements or design, programming is the art of adding bugs to an empty text file."
 ];
 
 const Cron = {
 
 	async init() {
-		cron.schedule('* * * * *', () => this.updateStatus());
+		cron.schedule('*/10 * * * *', () => this.updateStatus());
 
 		this.updateStatus();
 	},
