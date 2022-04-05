@@ -403,13 +403,14 @@ const quotes = [
 	"A SQL query goes into a bar, walks up to two tables, and asks, ‘Can I join you?",
 	"My mother always used to say: The older you get, the better you get, unless you’re a banana.",
 	"If I’m not back in five minutes, just wait longer",
-	"Without requirements or design, programming is the art of adding bugs to an empty text file."
+	"Without requirements or design, programming is the art of adding bugs to an empty text file.",
+	"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."
 ];
 
 const Cron = {
 
 	async init() {
-		cron.schedule('*/10 * * * *', () => this.updateStatus());
+		cron.schedule('*/30 * * * *', () => this.updateStatus());
 
 		this.updateStatus();
 	},
