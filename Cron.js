@@ -404,7 +404,45 @@ const quotes = [
 	"My mother always used to say: The older you get, the better you get, unless you’re a banana.",
 	"If I’m not back in five minutes, just wait longer",
 	"Without requirements or design, programming is the art of adding bugs to an empty text file.",
-	"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."
+	"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+	"Friendship ... is born at the moment when one man says to another 'What! You too? I thought that no one but myself . . .'",
+	"If you tell the truth, you don't have to remember anything.",
+	// UX
+	"A user interface is like a joke. If you have to explain it, it’s not that good.",
+	"Truth is like poetry. And most people fucking hate poetry.",
+	"A problem well stated is a problem half solved.",
+	"Ease of use may be invisible, but its absence sure isn’t.",
+	"Rule of thumb for UX: More options, more problems.",
+	"A user interface is well-designed when the program behaves exactly how the user thought it would.",
+	"Yout call is important to us... please enjoy this 40 minute flute solo.",
+	"As far as the customer is concerned, the interface is the product.",
+	"To design is to communicate clearly by whatever means you can control or master",
+	// marketing quotes
+	"Just because you can measure everything doesn’t mean that you should.",
+	"Social media allows big companies to act small again.",
+	"Content is the atomic particle of all digital marketing.",
+	"Branded content is created for a company. A content brand is created for a valuable company.",
+	"Never let ads write checks your website can’t cash.",
+	// jokes
+	"My wife told me to stop impersonating a flamingo. I had to put my foot down.",
+	"I failed math so many times at school, I can’t even count.",
+	"I was wondering why the frisbee kept getting bigger and bigger, but then it hit me.",
+	"I heard there were a bunch of break-ins over at the car park. That is wrong on so many levels...",
+	"I want to die peacefully in my sleep, like my grandfather… Not screaming and yelling like the passengers in his car.",
+	"It takes a lot of balls to golf the way I do.",
+	"I told him to be himself; that was pretty mean, I guess.",
+	"I know they say that money talks, but all mine says is ‘Goodbye.",
+	"My father has schizophrenia, but he’s good people.",
+	"The problem with kleptomaniacs is that they always take things literally.",
+	"I can’t believe I got fired from the calendar factory. All I did was take a day off.",
+	"Most people are shocked when they find out how bad I am as an electrician.",
+	"Never trust atoms; they make up everything.",
+	"My wife just found out I replaced our bed with a trampoline. She hit the ceiling!",
+	"I was addicted to the hokey pokey, but then I turned myself around.",
+	"I used to think I was indecisive. But now I’m not so sure.",
+	"Just burned 2,000 calories. That’s the last time I leave brownies in the oven while I nap.",
+	"Two fish are in a tank. One says, ‘How do you drive this thing?",
+	"Build a man a fire and he’ll be warm for a day. Set a man on fire and he’ll be warm for the rest of his life."
 ];
 
 const Cron = {
