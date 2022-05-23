@@ -1,7 +1,7 @@
 import axios from 'axios';
 import cron from 'node-cron';
 
-import { API_KEY } from './config/Index.js';
+import { API_KEY } from '../config/Index.js';
 
 const emojiis = [
 	"bowtie",
